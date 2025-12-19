@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/list.css">
+    <title>Task Summary</title>
+</head>
+
+<body>
+<header>
+    <h1>Task Summary</h1>
+</header>
+
+<main>
+    <p><a href="index.html">Back to Task Form</a></p>
+    <label class="checkboxWrapper">
+        <input type="checkbox" id="toggleCompleted">
+        <span>Show completed</span>
+    </label>
+    <table id="taskTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Recurrence</th>
+            <th>Category</th>
+            <th>Change Status</th>
+        </tr>
+        </thead>
+        <tbody id="taskTableBody">
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <p>© Nilufar Ilyasli 2025</p>
+</footer>
+<script type="module" src="js/list_script.js"></script>
+</body>
+</html>

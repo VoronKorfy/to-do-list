@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>To-Do List</title>
+</head>
+
+<body>
+<header><h1>Task Form</h1></header>
+<div id="savedMessage">Saved!</div>
+<main>
+    <form id="taskForm">
+        <label for="titleTask">Task Title *</label>
+        <input type="text" id="titleTask" placeholder="New task" required title="Enter the task title here">
+
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Today's task..." title="Optional description for the task"></textarea>
+
+        <label for="tags">Tags</label>
+        <input type="text" id="tags" placeholder="#tag1, #tag2..." title="Enter comma-separated tags">
+
+        <label for="startDate">Start Date *</label>
+        <input type="date" id="startDate" required title="Select when the task starts">
+
+        <label for="dueDate">Due Date *</label>
+        <input type="date" id="dueDate" required title="Select when the task should be done">
+
+        <label for="priority">Priority *</label>
+        <select id="priority" required>
+            <option value="">Choose Priority</option>
+        </select>
+
+        <label for="status">Status *</label>
+        <select id="status" required title="Choose the current status of the task">
+            <option value="">Choose status</option>
+        </select>
+
+        <label for="recurrence">Recurrence *</label>
+        <select id="recurrence" title="Choose recurrence (if any)">
+            <option value="">Choose reccurence</option>
+        </select>
+
+        <label>Category</label>
+        <div id="categoryButtons" class="category-buttons"></div>
+        <hr>
+        <button type="button" id="saveBtn">Save Task</button>
+
+        <p><a href="list.html">View Task Summary</a></p>
+    </form>
+</main>
+<footer><p>© Nilufar Ilyasli 2025</p></footer>
+<script type="module" src="js/index_script.js"></script>
+</body>
+</html>
